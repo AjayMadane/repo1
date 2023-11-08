@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: delhipod
+  labels:                                                   
+    env: development
+    class: pods
+spec:
+    containers:
+       - name: newpod
+         image: httpd
+         command: ["/bin/bash", "-c", "while true; do echo Hello-AJAY; sleep 60 ; done"]
